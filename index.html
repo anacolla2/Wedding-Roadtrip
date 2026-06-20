@@ -266,7 +266,7 @@ footer {
       <p class="small">Food, parking, activities, and emergency snacks are not included.</p>
     </div>
   </section>
-  <section class="timeline">
+  <section class="grid">
 
     <details class="day" open>
       <summary>
@@ -333,7 +333,7 @@ footer {
           <div class="day-title">July 19 — Boston Day</div>
           <div class="day-meta"> Probably no major driving? • Clusters of activities?</div>
         </div>
-        <span class="tag green">Park once</span>
+        <span class="tag green">Parking. . .</span>
       </summary>
       <div class="day-body">
         <div class="item"><div class="time">Morning</div><div>Choose one area: Back Bay/Newbury/Prudential, Museum of Fine Arts/Gardner Museum, or Boston Common/North End?</div></div>
@@ -352,7 +352,7 @@ footer {
       </summary>
       <div class="day-body">
         <div class="item"><div class="time">9:30 AM</div><div>Pack car and leave before the late-morning traffic pileup if everyone is ready.</div></div>
-        <div class="item"><div class="time">Route</div><div>Drive from Boston/MA to NJ. Drop Ana off</div></div>
+        <div class="item"><div class="time">Route</div><div>Drive back from Boston. Drop Ana off</div></div>
         <div class="item"><div class="time">Cost</div><div>Gas estimate: $60 total. Tolls are TBD; your note estimates about $60 total / $20 each.</div></div>
         <p>
           <a class="maplink" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=220+Huntington+Ave%2C+Boston%2C+MA+02115&destination=New+Jersey&waypoints=Ana%27s+stop" target="_blank">Open rough return route</a>
@@ -381,16 +381,7 @@ footer {
       <label><input type="checkbox" data-key="parking"> Check parking cost at Boston hotel</label>
       <label><input type="checkbox" data-key="weddingtime"> Confirm wedding start time</label>
       <label><input type="checkbox" data-key="routes"> Save offline maps</label>
-      <label><input type="checkbox" data-key="penny"> Confirm 1118 Penny Lane is removed from route</label>
     </div>
-
-    <div class="card">
-      <h2>Notes</h2>
-      <p><strong>Wedding day is the anchor.</strong> The July 17 plan should revolve around getting ready, arriving early, and not creating unnecessary side quests.</p>
-      <p><strong>Boston optimization:</strong> choose walkable clusters, park once, and keep the car out of the drama.</p>
-      <p><strong>Unconfirmed:</strong> exact Google Maps stop order, exact tolls, parking, and wedding start time.</p>
-    </div>
-  </section>
 </main>
 
 <footer>
@@ -402,7 +393,8 @@ const costs = [
   {name:"NH hotel", total:407.61},
   {name:"Boston hotel", total:541.64},
   {name:"Gas estimate", total:240.00},
-  {name:"Tolls estimate", total:78.00}
+  {name:"Tolls estimate", total:78.00},
+  {name:"Parking estimate", total:0.00}
 ];
 
 function money(x) {
